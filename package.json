@@ -6,9 +6,9 @@
   "scripts": {
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode=development",
-    "seed": "DATABASE_URL=postgresql://rosalie0:v2_3yfwz_9e7KLp5LDFzz3UDjTvwjnJN@db.bit.io:5432/rosalie0/codenames?ssl=true node --experimental-specifier-resolution=node --loader ts-node/esm server/db/seed.ts",
+    "seed": "DATABASE_URL=postgresql://postgres:LSePGCOd9O6X3h4f531W@containers-us-west-200.railway.app:6688/railway node --experimental-specifier-resolution=node --loader ts-node/esm server/db/seed.ts",
     "seed:dev": "node --experimental-specifier-resolution=node --loader ts-node/esm server/db/seed.ts",
-    "start": "DATABASE_URL=postgresql://rosalie0:v2_3yfwz_9e7KLp5LDFzz3UDjTvwjnJN@db.bit.io:5432/rosalie0/codenames?ssl=true node --experimental-specifier-resolution=node --loader ts-node/esm server/index.ts --ignore dist/ --ignore src/",
+    "start": "DATABASE_URL=postgresql://postgres:LSePGCOd9O6X3h4f531W@containers-us-west-200.railway.app:6688/railway node --experimental-specifier-resolution=node --loader ts-node/esm server/index.ts --ignore dist/ --ignore src/",
     "start:dev": "nodemon server/index.ts --ignore dist/ --ignore src/ & npm run build:dev"
   },
   "keywords": [],
