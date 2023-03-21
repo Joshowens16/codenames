@@ -3,9 +3,6 @@ const config = {
   logging: false,
 };
 
-const DB_NAME = 'codenames';
-const URL = `postgres://localhost/${DB_NAME}`;
-
-const db = new Sequelize(process.env.DATABASE_URL || URL);
+const db = new Sequelize(process.env.DATABASE_URL);
 
 export default db;
