@@ -63,7 +63,7 @@ export default function BasicPopover() {
               padding: '8px',
             }}
           ></div>
-          <Typography sx={{ p: 2 }}>If we want to add a timer, it can go here:)</Typography>
+          <Typography sx={{ p: 2 }}>The timer is still being built!</Typography>
         </Popover>
       </ThemeProvider>
     </div>
